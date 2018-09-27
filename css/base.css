@@ -2,15 +2,86 @@
 	box-sizing: border-box;
 	position: relative;
 }
-.test { outline: 10px solid red; }
+
 .container {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
+
 }
 
 body {
-			font-family: sans-serif;
-			background-color: tan;
-		}
+	color: black;
+	background-color: #f8d78a;
+
+}
+
+#maintitle {
+	font-size: 12vw;
+	font-family: 'Rye', cursive;
+	text-align: center;
+	color: black;
+	border: 5px black;
+	border-style: solid none;
+	text-transform: uppercase;
+	padding: 1%;
+	top: 30%;
+}
+
+h2.mainsub {
+	font-size: 5vw;
+	text-align: center;
+	padding-bottom: 5%;
+	text-transform: uppercase;
+	top: 30%
+}
+
+.atlantic {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2vw;
+	padding: 1%;
+	top: 30%;
+
+}
+
+p.right {
+	top: 50%;
+	font-size: 2vw;
+	background-color: blue;
+	float: left;
+
+}
+
+p.chase {
+	top: 60%;
+	font-size: 2vw;
+	background-color: pink;
+	text-align: center;
+
+}
+
+p.run {
+	top: 70%;
+	font-size: 2vw;
+	background-color: orange;
+	text-align: center;
+
+}
+
+p.drudgery {
+	top: 80%;
+	float: right;
+	font-size: 2vw;
+	background-color: red;
+	text-align: center;
+
+}
+
+p.colorful {
+	top: 100%;
+	font-size: 2vw;
+	background-color: green;
+	float: left;
+
+}
