@@ -20,9 +20,8 @@ body {
 	font-size: 12vw;
 	font-family: 'Rye', cursive;
 	text-align: center;
+	border: 2px solid black;
 	color: black;
-	border: 5px black;
-	border-style: solid none;
 	text-transform: uppercase;
 	padding: 1%;
 	top: 30%;
@@ -39,7 +38,7 @@ h2.mainsub {
 .atlantic {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	padding: 1%;
 	top: 30%;
 
@@ -84,4 +83,87 @@ p.colorful {
 	background-color: green;
 	float: left;
 
+}
+
+p.sensible {
+	top: 110%;
+	font-size: 2vw;
+	background-color: pink;
+	float: left;
+
+}
+
+p.risk {
+	top: 130%;
+	font-size: 2vw;
+	background-color: orange;
+	float: left;
+	display: flex;
+
+
+}
+
+span.see {
+	background-color: black
+	color: white;
+	writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+div.chorus {
+	top: 220%;
+	background-color: red;
+}
+
+h1.chorusfirst {
+	font-size: 8vw;
+	font-family: 'Rye', cursive;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1%;
+}
+
+h2.chorussub {
+	font-size: 3vw;
+	font-family: serif;
+	color: black;
+	text-transform: uppercase;
+	background-color: white;
+	padding: 1%;
+}
+
+div.chorusthird {
+	top: 240%;
+	background-color: green;
+	padding: 40px;
+
+}
+
+div.sickbeat {
+	background-color: purple;
+	top: 260%;
+	text-align: center;
+}
+
+h1.damn {
+	font-size: 12vw;
+	font-family: 'Rye', cursive;
+	text-align: center;
+	background-color: black;
+	color: #f8d78a;
+	text-transform: uppercase;
+	padding: 1%;
+	top: 290%;
+}
+
+p.suddenly {
+	text-align: center;
+	font-size: 3vw;
+	font-family: serif;
+	color: black;
+	text-transform: uppercase;
+	background-color: white;
+	padding: 1%;
+	top: 290%;
 }
