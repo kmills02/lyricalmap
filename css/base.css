@@ -12,7 +12,11 @@
 
 body {
 	color: black;
+	background-image: url(/pictures/parchment.jpg);
 	background-color: #f8d78a;
+	background-repeat: repeat-y;
+	background-size: cover;
+
 
 }
 
@@ -44,16 +48,23 @@ h2.mainsub {
 
 }
 
+div.firststanza {
+
+	width: 100%;
+	top: 80%;
+}
+
 p.right {
-	top: 50%;
+
 	font-size: 2vw;
-	background-color: blue;
-	float: left;
+	padding-bottom: 20%;
+	text-align: center;
+	font-weight: bold;
 
 }
 
 p.chase {
-	top: 60%;
+
 	font-size: 2vw;
 	background-color: pink;
 	text-align: center;
@@ -61,7 +72,7 @@ p.chase {
 }
 
 p.run {
-	top: 70%;
+
 	font-size: 2vw;
 	background-color: orange;
 	text-align: center;
@@ -69,8 +80,8 @@ p.run {
 }
 
 p.drudgery {
-	top: 80%;
-	float: right;
+
+
 	font-size: 2vw;
 	background-color: red;
 	text-align: center;
@@ -78,28 +89,25 @@ p.drudgery {
 }
 
 p.colorful {
-	top: 100%;
+
 	font-size: 2vw;
 	background-color: green;
-	float: left;
+
 
 }
 
 p.sensible {
-	top: 110%;
+
 	font-size: 2vw;
 	background-color: pink;
-	float: left;
+
 
 }
 
 p.risk {
-	top: 130%;
+
 	font-size: 2vw;
 	background-color: orange;
-	float: left;
-	display: flex;
-
 
 }
 
@@ -111,8 +119,23 @@ span.see {
 }
 
 div.chorus {
-	top: 220%;
+	top: 100%;
 	background-color: red;
+}
+
+div.chorus2 {
+	background-color: red;
+	top: 340%;
+}
+
+div.chorus3 {
+	background-color: red;
+	top: 440%;
+}
+
+div.chorus4 {
+	background-color: red;
+	top: 500%;
 }
 
 h1.chorusfirst {
@@ -128,6 +151,7 @@ h2.chorussub {
 	font-size: 3vw;
 	font-family: serif;
 	color: black;
+	text-align: center;
 	text-transform: uppercase;
 	background-color: white;
 	padding: 1%;
@@ -137,13 +161,67 @@ div.chorusthird {
 	top: 240%;
 	background-color: green;
 	padding: 40px;
-
 }
+
+div.chorusthird2 {
+	top: 350%;
+	background-color: green;
+	padding: 40px;
+}
+
+div.chorusthird3 {
+	top: 470%;
+	background-color: green;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	}
+
+p.chorusitalic {
+	font-style: italic;
+	font-size: 5vw;
+	background-color: purple;
+	line-height: 1.2em;
+	text-align: center;
+	width: 50px;
+	left: 50%;
+}
+
+p.chorusneed {
+	font-size: 2vw;
+	background-color: yellow;
+	text-align: center;
+}
+
 
 div.sickbeat {
 	background-color: purple;
 	top: 260%;
 	text-align: center;
+}
+
+div.sickbeat2 {
+	background-color: purple;
+	top: 360%;
+	text-align: center;
+}
+
+div.sickbeat3 {
+	background-color: purple;
+	top: 480%;
+	text-align: center;
+}
+
+div.damnchorus {
+	top: 290%;
+}
+
+div.damnchorus2 {
+	top: 390%;
+}
+
+div.damnchorus3 {
+	top: 490%;
 }
 
 h1.damn {
@@ -166,4 +244,39 @@ p.suddenly {
 	background-color: white;
 	padding: 1%;
 	top: 290%;
+}
+
+p.side {
+	font-size: 3vw;
+	background-color: yellow;
+	text-align: center;
+}
+
+div.secondstanza {
+	background-color: pink;
+	top: 320%;
+}
+
+div.bridge {
+	background-color: yellow;
+	top: 390%;
+}
+
+div.thirdstanza {
+	background-color:orange;
+	top: 410%;
+}
+
+div.numbers {
+	background-color: black;
+	color: white;
+	top: 420%;
+}
+
+h1.ten {
+	font-family: 'Rye', cursive;
+	font-size: 12vw;
+	background-color: black;
+	color: white;
+	text-align: center;
 }
