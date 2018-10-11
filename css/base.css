@@ -1,282 +1,570 @@
 * {
-	box-sizing: border-box;
-	position: relative;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .container {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
-	color: black;
-	background-image: url(/pictures/parchment.jpg);
-	background-color: #f8d78a;
-	background-repeat: repeat-y;
-	background-size: cover;
+  color: black;
+  background-image: url(/pictures/parchment.jpg);
+  background-color: #f8d78a;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
 
+p, h2, h3 {
+  font-family: 'Vollkorn', serif;
+}
 
+svg.ornament {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+svg.ornament2 {
+  width: 100%;
+  position: absolute;
+  top: 71%;
+}
+
+img.arrow {
+  left: 48%;
+  position: absolute;
+  top: 120%;
+  padding-bottom: 20%;
 }
 
 #maintitle {
-	font-size: 12vw;
-	font-family: 'Rye', cursive;
-	text-align: center;
-	border: 2px solid black;
-	color: black;
-	text-transform: uppercase;
-	padding: 1%;
-	top: 30%;
+  font-size: 10vw;
+  font-family: 'Rye', cursive;
+  text-align: center;
+  /*border: 2px solid black;*/
+  color: black;
+  text-transform: uppercase;
+  padding: 1%;
+  top: 28%;
 }
 
 h2.mainsub {
-	font-size: 5vw;
-	text-align: center;
-	padding-bottom: 5%;
-	text-transform: uppercase;
-	top: 30%
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+  top: 29%;
+  background-color: black;
+  color: #f8d78a;
+  width: 65%;
+  left: 18%;
 }
 
 .atlantic {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 1.5vw;
-	padding: 1%;
-	top: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 1.8vw;
+  padding: 1%;
+  top: 22%;
+}
+
+@keyframes my-great-animation {
+  from {
+    left: 74%;
+  }
+
+  to {
+    left: 53%;
+  }
+}
+
+@keyframes my-great-animationleft {
+  from {
+    left: 19%;
+  }
+
+  to {
+    left: 40%;
+  }
+}
+
+img.elephantright {
+  position: absolute;
+  left: 58%;
+  top: 73%;
+  width: 8%;
+  height: auto;
+  animation-name: my-great-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+img.elephantleft {
+  position: absolute;
+  left: 35%;
+  top: 73%;
+  width: 8%;
+  height: auto;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  animation-name: my-great-animationleft;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+img.point {
+  left: 40%;
 
 }
 
-div.firststanza {
+img.point2 {
+  left: 40%;
 
-	width: 100%;
-	top: 80%;
+  padding-bottom: 20%;
+}
+
+img.star {
+  left: 43%;
+  padding-top: 5%;
+  size: 80%;
+
+}
+
+
+img.star3 {
+  left: 43%;
+  padding-top: 10%;
+  size: 80%;
+}
+
+img.star4 {
+  padding-bottom: 5%;
+  size: 80%;
+}
+
+div.starbottom {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+div.firststanza {
+  width: 100%;
+  top: 80%;
 }
 
 p.right {
-
-	font-size: 2vw;
-	padding-bottom: 20%;
-	text-align: center;
-	font-weight: bold;
-
+  font-size: 2vw;
+  text-align: center;
+  line-height: 5vw;
+  padding-top: 42%;
+  letter-spacing: 2vw;
+  width: 100%;
+  color: black;
 }
 
+p.rightbridge {
+  font-size: 1.2vw;
+  text-align: left;
+  line-height: 4vw;
+  padding-top: 0;
+  padding-left: 10%;
+  letter-spacing: 1.3vw;
+  width: 100%;
+  color: black;
+}
+
+p.rightbridge2 {
+  font-size: 1.2vw;
+  text-align: right;
+  line-height: 4vw;
+  padding-top: 0;
+  padding-right: 10%;
+  letter-spacing: 1.3vw;
+  width: 100%;
+  color: black;
+}
 p.chase {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 6vw;
+  line-height: 2;
+  text-align: center;
+  padding-top: 20%;
+  text-transform: uppercase;
+}
 
-	font-size: 2vw;
-	background-color: pink;
-	text-align: center;
+p.chasebridge {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 2vw;
+  line-height: 2;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+}
 
+p.fairenough {
+  font-size: 1.4vw;
+  text-align: right;
+  line-height: 4vw;
+  letter-spacing: 2vw;
+  width: 100%;
+  color: black;
+  padding-top: 5%;
+  padding-right: 10%;
 }
 
 p.run {
+  font-size: 2vw;
+  text-align: right;
+  padding: 10%;
+  padding-top: 10%;
+  padding-right: 20%;
+}
 
-	font-size: 2vw;
-	background-color: orange;
-	text-align: center;
-
+h2.knowyou {
+  font-size: 5vw;
+  padding-top: 20%;
+  padding-left: 21%;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.9;
 }
 
 p.drudgery {
-
-
-	font-size: 2vw;
-	background-color: red;
-	text-align: center;
-
+  font-family: 'Six Caps', sans-serif;
+  font-size: 4vw;
+  text-align: left;
+  padding-top: 15%;
+  padding-left: 20%;
+  padding-bottom: 15%;
 }
 
 p.colorful {
-
-	font-size: 2vw;
-	background-color: green;
-
-
-}
-
-p.sensible {
-
-	font-size: 2vw;
-	background-color: pink;
-
-
+  text-align: left;
+  font-size: 1vw;
+  padding-left: 37%;
+  padding-bottom: 15%;
+  line-height: 2.2vw;
 }
 
 p.risk {
-
-	font-size: 2vw;
-	background-color: orange;
-
+  font-size: 1.8vw;
+  font-family: 'Ultra', serif;
+  text-align: right;
+  padding-right: 20%;
+  padding-bottom: 20%;
 }
 
 span.see {
-	background-color: black
-	color: white;
-	writing-mode: vertical-rl;
-  text-orientation: upright;
+  font-size: 2vw;
+  letter-spacing: 4vw;
+  font-weight: bold;
+  padding: 5%;
+
 }
 
+
 div.chorus {
-	top: 100%;
-	background-color: red;
+  top: 100%;
+  padding-top: 15%;
 }
 
 div.chorus2 {
-	background-color: red;
-	top: 340%;
+  top: 340%;
 }
 
 div.chorus3 {
-	background-color: red;
-	top: 440%;
+  top: 490%;
 }
 
-div.chorus4 {
-	background-color: red;
-	top: 500%;
+h1.chorussecond {
+  font-size: 7vw;
+  font-family: 'Ultra', serif;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1%;
+  letter-spacing: 1.2vw;
 }
 
 h1.chorusfirst {
-	font-size: 8vw;
-	font-family: 'Rye', cursive;
-	color: black;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 1%;
+  font-size: 10vw;
+  font-family: 'Rye', cursive;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1%;
 }
 
 h2.chorussub {
-	font-size: 3vw;
-	font-family: serif;
-	color: black;
-	text-align: center;
-	text-transform: uppercase;
-	background-color: white;
-	padding: 1%;
+  font-size: 3vw;
+  font-family: serif;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: 1%;
 }
 
 div.chorusthird {
-	top: 240%;
-	background-color: green;
-	padding: 40px;
+  top: 150%;
+  padding: 40px;
 }
 
 div.chorusthird2 {
-	top: 350%;
-	background-color: green;
-	padding: 40px;
+  top: 390%;
+  padding: 40px;
 }
 
 div.chorusthird3 {
-	top: 470%;
-	background-color: green;
-	padding: 40px;
-	display: flex;
-	justify-content: center;
-	}
+  top: 520%;
+  padding: 40px;
+
+}
 
 p.chorusitalic {
-	font-style: italic;
-	font-size: 5vw;
-	background-color: purple;
-	line-height: 1.2em;
-	text-align: center;
-	width: 50px;
-	left: 50%;
+  font-family: 'Ultra', serif;
+  font-size: 3.8vw;
+  line-height: 1.2em;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+p.chorusbottom {
+  font-family: 'Ultra', serif;
+  font-size: 3.8vw;
+  line-height: 1.2em;
+  padding-bottom: 10%;
+  text-align: center;
 }
 
 p.chorusneed {
-	font-size: 2vw;
-	background-color: yellow;
-	text-align: center;
+  font-size: 2vw;
+  text-align: center;
 }
 
-
 div.sickbeat {
-	background-color: purple;
-	top: 260%;
-	text-align: center;
+  top: 190%;
+  text-align: center;
+}
+
+h3.sickbeatvs1 {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 13vw;
+  padding-bottom: 2%;
+}
+
+h3.sickbeatvs2 {
+  font-family: 'Ultra', serif;
+  font-size: 5.6vw;
+  padding-bottom: 2%;
+}
+
+p.sickbeatvs3 {
+  padding-bottom: 3%;
+  font-size: 2.5vw;
+  letter-spacing: 8vw;
+  line-height: 15vw;
+  text-align: right;
+  padding-left: 3%;
+  padding-right: 4%;
+}
+
+span.key {
+  font-family: 'Ultra', serif;
+  font-size: 10vw;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2vw;
+  position: absolute;
+  top: 115%;
+  left: 35%;
 }
 
 div.sickbeat2 {
-	background-color: purple;
-	top: 360%;
-	text-align: center;
+  top: 400%;
+  text-align: center;
 }
 
 div.sickbeat3 {
-	background-color: purple;
-	top: 480%;
-	text-align: center;
+  top: 560%;
+  text-align: center;
+}
+
+h3.key {
+  font-family: 'Rye', cursive;
+  font-size: 15vw;
+  text-transform: uppercase;
 }
 
 div.damnchorus {
-	top: 290%;
+  top: 305%;
+
 }
 
 div.damnchorus2 {
-	top: 390%;
+  top: 500%;
 }
 
 div.damnchorus3 {
-	top: 490%;
+  top: 660%;
 }
 
 h1.damn {
-	font-size: 12vw;
-	font-family: 'Rye', cursive;
-	text-align: center;
-	background-color: black;
-	color: #f8d78a;
-	text-transform: uppercase;
-	padding: 1%;
-	top: 290%;
+  font-size: 12vw;
+  font-family: 'Rye', cursive;
+  text-align: center;
+  background-color: black;
+  color: #f8d78a;
+  text-transform: uppercase;
+  padding: 1%;
+  top: 290%;
 }
 
 p.suddenly {
-	text-align: center;
-	font-size: 3vw;
-	font-family: serif;
-	color: black;
-	text-transform: uppercase;
-	background-color: white;
-	padding: 1%;
-	top: 290%;
+  font-family: 'Six Caps', sans-serif;
+  text-align: center;
+  letter-spacing: 7%;
+  font-size: 13vw;
+  color: black;
+  text-transform: uppercase;
+  padding: 1%;
+  top: 290%;
 }
 
 p.side {
-	font-size: 3vw;
-	background-color: yellow;
-	text-align: center;
+  font-size: 3vw;
+  background-color: yellow;
+  text-align: center;
 }
 
 div.secondstanza {
-	background-color: pink;
-	top: 320%;
+  top: 300%;
 }
 
 div.bridge {
-	background-color: yellow;
-	top: 390%;
+  top: 500%;
 }
 
 div.thirdstanza {
-	background-color:orange;
-	top: 410%;
+  top: 450%;
 }
 
+
+@keyframes numberslefttoright {
+  from {
+    left: -80%;
+  }
+
+  to {
+    left: -30%;
+  }
+}
+
+@keyframes numbersrighttoleft {
+  from {
+    left: -10%;
+  }
+
+  to {
+    left: -40%;
+  }
+}
+
+
 div.numbers {
-	background-color: black;
-	color: white;
-	top: 420%;
+  color: black;
+  top: 440%;
+}
+
+h4.fifteen {
+  font-family: 'Rye', cursive;
+  text-align: left;
+  font-size: 7vw;
+  padding-bottom: 15%;
+  animation-name: numberslefttoright;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+p.Iddo {
+  text-align: right;
+  animation-name: numbersrighttoleft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h3.eight {
+  font-family: 'Six Caps', sans-serif;
+  text-align: right;
+  font-size: 12vw;
+  animation-name: numbersrighttoleft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+h2.twelve {
+  font-family: 'Rye', cursive;
+  text-align: right;
+  padding-top: 15%;
+  font-size: 10vw;
+  animation-name: numberslefttoright;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+
+}
+
+p.maybe {
+  padding-left: 3%;
+  font-size: 2vw;
+  text-align: right;
+  animation-name: numberslefttoright;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+}
+
+h2.nine {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 18vw;
+  text-align: right;
+  padding-top: 15%;
+  padding-bottom: 28%;
+  animation-name: numbersrighttoleft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
 }
 
 h1.ten {
-	font-family: 'Rye', cursive;
-	font-size: 12vw;
-	background-color: black;
-	color: white;
-	text-align: center;
+  font-family: 'Rye', cursive;
+  font-size: 16vw;
+  background-color: black;
+  color: #f8d78a;
+  text-align: center;
 }
